@@ -1,0 +1,12 @@
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu li {
+  padding: 30px;
+}
+
+.menu li:hover {
+  background-color: #d3d3d3;
+}

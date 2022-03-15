@@ -1,0 +1,33 @@
+.movies {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+/* .movies:after {
+  content: "";
+  flex: auto;
+} */
+
+.movie-item {
+  display: inline-block;
+  flex: 0 0 20%;
+}
+
+.overlay {
+  opacity: 0;
+  transition: 0.3s ease;
+  color: white;
+}
+
+.movie-item:hover .overlay {
+  opacity: 1;
+}
+
+.movie-item-content {
+  width: 350px;
+  height: 500px;
+  padding: 20px;
+  margin-top: 10px;
+}
