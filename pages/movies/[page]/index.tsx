@@ -57,44 +57,4 @@ export async function getServerSideProps(context: GetServerSidePropsContext) {
   };
 }
 
-// export async function getStaticPaths() {
-//   const response = await fetch(
-//     "https://api.themoviedb.org/3/movie/popular?api_key=575fe42afb99519dca44ad51c337b911&language=en-US"
-//   );
-//   const data: IResultMovie = await response.json();
-
-//   const { total_pages } = data;
-//   const newArray = Array.from({ length: 50 }, (_, item) => item + 1);
-//   const paths = newArray.map((item: any) => {
-//     return {
-//       params: { page: item.toString() },
-//     };
-//   });
-
-//   return {
-//     paths: paths,
-//     fallback: false, // false or 'blocking'
-//   };
-// }
-
-// export const getStaticProps = async (
-//   context: GetStaticPropsContext
-// ): Promise<{
-//   props: {
-//     data: IResultMovie;
-//   };
-// }> => {
-//   const page = context.params?.page;
-
-//   const response = await fetch(
-//     `https://api.themoviedb.org/3/movie/popular?api_key=575fe42afb99519dca44ad51c337b911&language=en-US&page=${page}`
-//   );
-//   const data = await response.json();
-//   return {
-//     props: {
-//       data: data,
-//     },
-//   };
-// };
-
 export default MoviePage;
